@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      /* Стили с максимальным возможным приоритетом */
+      html body * {
+        font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+      }
+      html[lang="en"] body * {
+        font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+      }
+      /* Более конкретные селекторы имеют больший приоритет */
+      body div, body p, body span, body h1,
+      body h2, body h3, body h4, body h5,
+      body h6, body button, body input,
+      body textarea, body select, body a {
+        font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+      }
+      /* Добавим больше специфичности для перезаписи возможных стилей */
+      html body *[class], html body *[id], html body *[style] {
+        font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+      }
+    </style>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      // Дополнительный JavaScript, который будет установлен шрифт после загрузки DOM
+      document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('*');
+        elements.forEach(function(el) {
+          el.style.setProperty('font-family', 'Montserrat Alternates, Arial, Helvetica', 'important');
+        });
+      });
+    </script>
+  </body>
+</html>

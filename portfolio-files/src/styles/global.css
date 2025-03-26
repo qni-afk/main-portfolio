@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', Arial, Helvetica !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', Arial, Helvetica !important;
+}
+
+/* More specific selectors override */
+body, html, div, p, span, h1, h2, h3, h4, h5, h6, button, input, textarea, select, a {
+  font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+}
+
+/* Even more specific selectors */
+html body *[class], html body *[id], html body *[style] {
+  font-family: 'Montserrat Alternates', Arial, Helvetica !important;
+}

@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: 'Montserrat', Arial, Helvetica !important;
+  color: white;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --purple: #540351;
+  --blue: #3627b1;
+  --cyan: #25afce;
+  --transparent: #00000000;
+  --radius-left: 3rem 0 0 3rem;
+  --radius-right: 0 3rem 3rem 0;
+}
+
+* {
+  font-family: 'Montserrat', Arial, Helvetica !important;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-family: 'Montserrat' !important;
+}
+
+button:hover,
+.class-sub-container a:hover,
+.project-item:hover,
+.skill-item:hover,
+.item:not(.active):hover,
+.sub-container-2:not(.active-subheading):hover,
+.sub-container-3:not(.active-subheading):hover {
+  background-image: linear-gradient(90deg, #ffffff00, #ffffff42 50%, #ffffff00);
+}
